@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	First name: <input id="first_name">
+	<button id="say">Say hi!</button>
+	<div id="result"></div>
+
+<script>
+function say_hi() {
+    let fname = document.getElementById('first_name').value;
+    let html = 'Hello ' + fname;
+ 
+    document.getElementById('result').innerHTML = html;
+}
+document.getElementById('say').addEventListener('click', say_hi);
+</script>
+</body>
+</html>
+</body>
+</html>
